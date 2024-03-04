@@ -2,9 +2,25 @@
 This fixes the issue were some jerk would find peoples paymenter panel and run a script to make accounts with just random numbers.
  
 
-# Step one run the following commands to make the specified files.
+## Step 1 Run the following commands to make the specified files.
 
-```larvel
-git clone https://yourrepositorylink.git
-cd yourrepository
+First make sure you are in your paymenter directory. `/var/www/paymenter`
+
+```bash
+cd /var/www/paymenter
 ```
+
+This is to make the command `php artisan user:deletebots`
+```bash
+php artisan make:command deletebots
+```
+This makes the mailing part of the account deletion.
+
+```bash
+php artisan make:mail AccountDeletionNotice
+```
+
+## Step 2 is to upload the files to the correct directorys. (If you are prompt to overwrite say yes)
+
+Put `deletebots.php` in `/var/www/paymenter/app/Console/Commands`
+Put 
