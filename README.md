@@ -34,4 +34,45 @@ Put `accountDeletionNotice.blade.php` in `/var/www/paymenter/resources/views/ema
 
 Upload `deletebots.service` to `/etc/systemd/system/`
 
-Upload `` to ``
+Upload `deletebots.timer` to `/etc/systemd/system/`
+
+## Step 2: Run the following commands.
+
+```bash
+sudo systemctl daemon-reload
+```
+
+```bash
+sudo systemctl enable deletebots.timer
+```
+
+```bash
+sudo systemctl start deletebots.timer
+```
+
+Now check to see if there running.
+
+```bash
+sudo systemctl status deletebots.timer
+```
+
+```bash
+sudo systemctl status deletebots.service
+```
+
+To check logs run
+
+```bash
+journalctl -u deletebots.service
+```
+
+
+# Contact Info
+
+If you need to contact me for any issue you can either open an issue on this repo or contact me with the following
+
+[tristan@scorpiohosting.net](mailto://tristan@scrpiohosting.net)
+
+Discord: `virusgaming`
+
+Discord Server: https://discord.gg/n474rgvgV8
