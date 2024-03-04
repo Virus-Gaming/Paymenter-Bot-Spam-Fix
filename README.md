@@ -26,4 +26,10 @@ Put `deletebots.php` in `/var/www/paymenter/app/Console/Commands/`
 
 Put `AccountDeletionNotice.php` in `/var/www/paymenter/app/Mail/` 
 
-Put 
+Put `accountDeletionNotice.blade.php` in `/var/www/paymenter/resources/views/emails/`
+
+# Making a systemd timer to run this command every second.
+
+## step 1 upload the following files to `/etc/systemd/system/`
+
+Upload ``
