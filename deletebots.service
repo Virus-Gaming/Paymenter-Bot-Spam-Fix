@@ -1,0 +1,11 @@
+[Unit]
+Description=Delete Bots Service with Loop
+
+[Service]
+User=paymenter
+Group=paymenter
+Type=simple
+ExecStart=/bin/bash -c 'while true; do php /var/www/paymenter/artisan user:deletebots; sleep 1; done'
+
+[Install]
+WantedBy=multi-user.target
