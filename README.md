@@ -22,5 +22,8 @@ php artisan make:mail AccountDeletionNotice
 
 ## Step 2 is to upload the files to the correct directorys. (If you are prompt to overwrite say yes)
 
-Put `deletebots.php` in `/var/www/paymenter/app/Console/Commands`
+Put `deletebots.php` in `/var/www/paymenter/app/Console/Commands/`
+
+Put `AccountDeletionNotice.php` in `/var/www/paymenter/app/Mail/` 
+
 Put 
