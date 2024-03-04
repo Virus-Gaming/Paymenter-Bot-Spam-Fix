@@ -4,7 +4,7 @@ This fixes the issue were some jerk would find peoples paymenter panel and run a
 
 # Step one run the following commands to make the specified files.
 
-```bash
+```larvel
 git clone https://yourrepositorylink.git
 cd yourrepository
 ```
