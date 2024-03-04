@@ -34,4 +34,4 @@ Put `accountDeletionNotice.blade.php` in `/var/www/paymenter/resources/views/ema
 
 Upload `deletebots.service` to `/etc/systemd/system/`
 
-
+Upload `` to ``
