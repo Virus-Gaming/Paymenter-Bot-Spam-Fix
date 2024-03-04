@@ -1,4 +1,4 @@
-# Paymenter-Bot-Spammer-Fix
+# Paymenter Bot Spam Fix
 This fixes the issue were some jerk would find peoples paymenter panel and run a script to make accounts with just random numbers.
  
 
@@ -32,4 +32,6 @@ Put `accountDeletionNotice.blade.php` in `/var/www/paymenter/resources/views/ema
 
 ## step 1 upload the following files to `/etc/systemd/system/`
 
-Upload ``
+Upload `deletebots.service` to `/etc/systemd/system/`
+
+
